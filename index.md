@@ -6,7 +6,7 @@ This site collects my expository papers and mathematical notes.
 
 ### Expository Papers
 
-Expository articles on topics in number theory, analysis, and abstract algebra (plus maybe some other topics), writtwn to clarify and deepen my understanding of the material (and hopefully it can for you too).
+Expository articles on topics in number theory, analysis, and abstract algebra (plus maybe some other topics), written to clarify and deepen my understanding of the material (and hopefully it can for you too).
 
 **Proof of Dirichlet's Theorem**  
 An expository paper on one of my favorite theorems in analytic number theory: Dirichlet's theorem on primes in arithmetic progressions.  

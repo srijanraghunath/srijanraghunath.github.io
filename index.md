@@ -1,5 +1,4 @@
-## Expository Papers and Notes
-
+## Expository Papers and Notes  
 This site collects my expository papers and mathematical notes.
 
 ---

@@ -9,7 +9,7 @@ Expository articles on topics in number theory, analysis, and abstract algebra (
 
 **Proof of Dirichlet's Theorem**  
 An expository paper on one of my favorite theorems in analytic number theory: Dirichlet's theorem on primes in arithmetic progressions.  
-[Download PDF](Dirichlets_Theorem_Primes_in_Arithmetic_Progressions_Proof.pdf)
+[Download PDF](Dirichlet_Theorem_AP.pdf)
 
 ---
 

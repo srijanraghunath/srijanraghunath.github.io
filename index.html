@@ -34,6 +34,7 @@
   color: #1a1a1a;
   background-color: #fcfcfa;
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
    h1 {
@@ -48,6 +49,23 @@
   font-size: 1.05em;
 }
 
+ .topnav {
+  margin: 18px 0 8px 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  color: #1a5fb4;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}  
    h2 {
   margin-top: 2.4em;
   margin-bottom: 0.8em;
@@ -118,15 +136,13 @@
 <h1>Srijan Raghunath</h1>
 <p class="subtitle">Mathematics — Number Theory &amp; Analysis</p>
 
-<h2>About</h2>
+<nav class="topnav">
+  <a href="#about">About</a>
+  <a href="#papers">Expository Papers</a>
+  <a href="#explorations">Independent Explorations</a>
+</nav>
 
-<p>
-My name is Srijan Raghunath and I am a senior (undergraduate) mathematics student at the University of Connecticut (as of March 2026). My primary interest is number theory, especially analytic number theory. This site serves as a collection of expository papers and personal mathematical explorations, written with the goal of learning through explanation. Hopefully, the material here is also useful to you.
-</p>
-
-<hr>
-
-<h2>Expository Papers</h2>
+<h2 id="about">About</h2>
 
 <p>
 Expository articles on topics in number theory, analysis, and abstract algebra (plus maybe some other topics), written to clarify and deepen my understanding of the material (and hopefully it can for you too).
@@ -149,7 +165,7 @@ Expository articles on topics in number theory, analysis, and abstract algebra (
 
 <hr>
 
-<h2>Independent Explorations</h2>
+<h2 id="papers">Expository Papers</h2>
 
 <p>
 Here you can find some of my independent mathematical explorations developed through personal study. While these ideas were arrived at independently, many are likely known results or variations of existing work.

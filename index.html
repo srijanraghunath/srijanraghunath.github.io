@@ -29,6 +29,7 @@
       line-height: 1.7;
       color: #111;
       background-color: #fafafa;
+      scroll-padding-top: 80px;
     }
 
     h1 {
@@ -49,12 +50,15 @@
       border-bottom: 1px solid #ddd;
     }
 
-    .topnav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #1a5fb4;
-      font-weight: 500;
-    }
+   .topnav {
+  position: sticky;
+  top: 0;
+  background: #fafafa;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
 
     .topnav a:hover {
       text-decoration: underline;

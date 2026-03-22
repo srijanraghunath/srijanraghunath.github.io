@@ -21,6 +21,24 @@
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
   <style>
+    .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.site-title-block {
+  flex: 1;
+}
+
+.site-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
     body {
       font-family: Georgia, serif;
       max-width: 900px;
@@ -225,8 +243,14 @@ body.dark-mode #darkModeToggle:hover {
 
 <body>
 
-<h1>Srijan Raghunath</h1>
-<p class="subtitle">Mathematics — Number Theory &amp; Analysis</p>
+<div class="site-header">
+  <div class="site-title-block">
+    <h1>Srijan Raghunath</h1>
+    <p class="subtitle">Mathematics — Number Theory &amp; Analysis</p>
+  </div>
+
+  <img src="logo.PNG" alt="Site logo" class="site-logo">
+</div>
 
 <nav class="topnav">
 <button id="darkModeToggle">Dark Mode</button>

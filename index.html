@@ -136,6 +136,22 @@
 #topBtn:hover {
   background-color: #144a91;
 }
+
+#darkModeToggle {
+  margin: 10px 0 20px 0;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 0.95em;
+}
+
+#darkModeToggle:hover {
+  background: #f2f2f2;
+}
     .tags {
   margin-top: 6px;
   margin-bottom: 10px;
@@ -151,6 +167,55 @@
   background: #f2f6fc;
   color: #1a5fb4;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e8e8e8;
+}
+
+body.dark-mode p,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .subtitle {
+  color: #e8e8e8;
+}
+
+body.dark-mode h1,
+body.dark-mode h3 a,
+body.dark-mode .topnav a,
+body.dark-mode .topnav a:visited {
+  color: #7fb3ff;
+}
+
+body.dark-mode .topnav {
+  background: #121212;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode h2,
+body.dark-mode hr {
+  border-color: #333;
+}
+
+body.dark-mode .paper-entry {
+  background: #1b1b1b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+body.dark-mode .tag {
+  background: #22324a;
+  color: #9ec5ff;
+}
+
+body.dark-mode #darkModeToggle {
+  background: #1b1b1b;
+  color: #e8e8e8;
+  border-color: #444;
+}
+
+body.dark-mode #darkModeToggle:hover {
+  background: #262626;
+}
   </style>
 </head>
 
@@ -160,6 +225,7 @@
 <p class="subtitle">Mathematics — Number Theory &amp; Analysis</p>
 
 <nav class="topnav">
+<button id="darkModeToggle">Dark Mode</button>
   <a href="#about">About</a>
   <a href="#papers">Expository Papers</a>
   <a href="#explorations">Independent Explorations</a>
@@ -267,6 +333,14 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+</script>
+
+<script>
+  const darkModeToggle = document.getElementById("darkModeToggle");
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
 </script>
 </body>
 </html>
